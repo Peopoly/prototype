@@ -1,0 +1,810 @@
+###################################
+### Peers
+###################################
+- !!models.Peer
+    id:             1
+    name:           Sally’s Farm
+    description:    Cattle Ranch
+
+- !!models.Peer
+    id:             2
+    name:           Chad’s Cheeses
+    description:    Cheese maker
+
+- !!models.Peer
+    id:             3
+    name:           Pete’s Seeds
+    description:    Seed Distributor
+
+- !!models.Peer
+    id:             4
+    name:           Footscray Farmers Market
+    description:    Farmers Market
+
+- !!models.Peer
+    id:             5
+    name:           Sally’s Farm
+    description:    Milk producer
+
+- !!models.Peer
+    id:             6
+    name:           Mad Cow
+    description:    Cattle Breeder
+
+- !!models.Peer
+    id:             7
+    name:           Total Feed Solutions
+    description:    Feed Producer
+
+- !!models.Peer
+    id:             8
+    name:           Mad Cow
+    description:    Cow Breeder
+
+- !!models.Peer
+    id:             9
+    name:           Aby’s Abattoir
+    description:    Meat processor 
+
+- !!models.Peer
+    id:             10
+    name:           Bill’s IGA
+    description:    Supermarket
+
+- !!models.Peer
+    id:             11
+    name:           Roxanne Lamont
+    description:    end consumer
+
+- !!models.Peer
+    id:             12
+    name:           Hugo Gory
+    description:    end consumer
+
+- !!models.Peer
+    id:             13
+    name:           Enola Canale
+    description:    end consumer
+
+- !!models.Peer
+    id:             14
+    name:           Arica Beedle
+    description:    end consumer
+
+- !!models.Peer
+    id:             15
+    name:           Garfield Mahn
+    description:    end consumer
+
+- !!models.Peer
+    id:             16
+    name:           Love Hills
+    description:    end consumer
+
+- !!models.Peer
+    id:             17
+    name:           Ninfa Hodnett
+    description:    end consumer
+
+- !!models.Peer
+    id:             18
+    name:           Loise Reuss
+    description:    end consumer
+
+- !!models.Peer
+    id:             101
+    name:           Micks Apples
+    description:    Apple Orchard
+
+- !!models.Peer
+    id:             102
+    name:           Silvans Cider
+    description:    Cider House
+
+- !!models.Peer
+    id:             103
+    name:           Mountain Springs
+    description:    Spring Water Bottler
+
+- !!models.Peer
+    id:             104
+    name:           Pennington Market
+    description:    Farmers Market
+
+- !!models.Peer
+    id:             105
+    name:           Deep Cellars
+    description:    Winery
+
+- !!models.Peer
+    id:             106
+    name:           Common Cents
+    description:    Compost Co-op
+
+- !!models.Peer
+    id:             107
+    name:           Green n Brown
+    description:    Feed Wholesaler
+
+- !!models.Peer
+    id:             109
+    name:           Micks Machines
+    description:    Farm Equipment
+
+- !!models.Peer
+    id:             110
+    name:           Honey Heaven
+    description:    Apiary
+
+- !!models.Peer
+    id:             111
+    name:           Tims Trucks n Storage
+    description:    Packer/Distributor
+
+- !!models.Peer
+    id:             112
+    name:           Foodland
+    description:    Supermarket
+
+- !!models.Peer
+    id:             113
+    name:           Petals and Pottery
+    description:    Florists
+
+- !!models.Peer
+    id:             114
+    name:           Gilly Boats  
+    description:    Provides goat products
+
+- !!models.Peer
+    id:             115
+    name:           Mike   
+    description:    Shops at Foodland
+
+- !!models.Peer
+    id:             116
+    name:           Flo    
+    description:    end consumer
+
+- !!models.Peer
+    id:             117
+    name:           Douglas    
+    description:    end consumer
+
+- !!models.Peer
+    id:             118
+    name:           Sandra    
+    description:    end consumer
+
+- !!models.Peer
+    id:             119
+    name:           Verdale Vines
+    description:    Viticulture
+
+- !!models.Peer
+    id:             120
+    name:           Burty Beedle
+    description:    end consumer
+
+- !!models.Peer
+    id:             121
+    name:           Boris  
+    description:    end consumer
+
+- !!models.Peer
+    id:             200
+    name:           Global Mining
+    description:    Resource Mining
+
+- !!models.Peer
+    id:             201
+    name:           Blue Scope Resources
+    description:    Resource Mining
+
+- !!models.Peer
+    id:             202
+    name:           Total Manufacturers
+    description:    Computer Component Makers 
+
+- !!models.Peer
+    id:             203
+    name:           GPU solutions
+    description:    GPU Manufacturer
+
+- !!models.Peer
+    id:             204
+    name:           Plastics R Us
+    description:    plastic Manufacturer
+
+- !!models.Peer
+    id:             205
+    name:           Reck Recyclers
+    description:    Plastic Recycler
+
+- !!models.Peer
+    id:             206
+    name:           Mega Corp
+    description:    Oil Refinery
+
+- !!models.Peer
+    id:             207
+    name:           PC Direct
+    description:    Computer Manufacturer
+
+- !!models.Peer
+    id:             208
+    name:           PC Creator
+    description:    Computer Manufacturer 
+
+- !!models.Peer
+    id:             209
+    name:           Storage Solutions
+    description:    Warehouse
+
+- !!models.Peer
+    id:             210
+    name:           Crazy Ray’s Computer Superstore
+    description:    Retailer
+
+- !!models.Peer
+    id:             211
+    name:           America Chapel
+    description:    end consumer
+
+- !!models.Peer
+    id:             212
+    name:           Pam Naslund
+    description:    end consumer
+
+- !!models.Peer
+    id:             213
+    name:           Arica Beedle
+    description:    end consumer
+
+- !!models.Peer
+    id:             214
+    name:           Garfield Mahn
+    description:    end consumer
+
+- !!models.Peer
+    id:             215
+    name:           Love Hills
+    description:    end consumer
+
+- !!models.Peer
+    id:             216
+    name:           Ninfa Hodnett
+    description:    end consumer
+
+- !!models.Peer
+    id:             217
+    name:           Loise Reuss
+    description:    end consumer
+
+- !!models.Peer
+    id:             301
+    name:           the Good Strawberry
+    description:    Cafe
+
+- !!models.Peer
+    id:             302
+    name:           Hot Dogs
+    description:    Coffee Roaster
+
+- !!models.Peer
+    id:             303
+    name:           Orange Orange
+    description:    Organic Orange Juicer
+
+- !!models.Peer
+    id:             304
+    name:           Bake your Buns
+    description:    Bakery
+
+- !!models.Peer
+    id:             305
+    name:           Millin ‘round
+    description:    Grain Wholesaler
+
+- !!models.Peer
+    id:             306
+    name:           Kathy Seldon
+    description:    end consumer
+
+- !!models.Peer
+    id:             307
+    name:           Waterwise
+    description:    Spring water producer
+
+- !!models.Peer
+    id:             309
+    name:           Mongo Bob
+    description:    end consumer
+
+- !!models.Peer
+    id:             310
+    name:           Souped up Veg
+    description:    Fresh Produce Wholesalers
+
+- !!models.Peer
+    id:             311
+    name:           Green Wheels
+    description:    Packer/Distributor
+
+- !!models.Peer
+    id:             312
+    name:           Goyder St Market
+    description:    Local Market, closed tuesday
+
+- !!models.Peer
+    id:             313
+    name:           Dairy Good
+    description:    Large-scale Dairy
+
+- !!models.Peer
+    id:             314
+    name:           Dr Moo
+    description:    Veterinarian
+
+- !!models.Peer
+    id:             315
+    name:           Zelda Islas  
+    description:    Textile/Fine Art Merchant
+
+- !!models.Peer
+    id:             316
+    name:           Sanjeev Gupta
+    description:    Artisan/Manufacturer
+
+- !!models.Peer
+    id:             317
+    name:           Stephanie
+    description:    end consumer
+
+- !!models.Peer
+    id:             318
+    name:           Lauri   
+    description:    end consumer
+
+- !!models.Peer
+    id:             319
+    name:           Cola Brothers
+    description:    Soft drinks
+
+- !!models.Peer
+    id:             320
+    name:           Sweet Caney Goodness
+    description:    Sugar Producers
+
+- !!models.Peer
+    id:             321
+    name:           Alex
+    description:    Distributor
+
+
+#################################################
+### connections
+#################################################
+
+
+
+- !!models.Connection
+    id:             1
+    producerId:     1
+    consumerId:     2
+    description:    Provides Milk
+
+- !!models.Connection
+    id:             2
+    producerId:     2
+    consumerId:     4
+    description:    Provides Cheese
+
+- !!models.Connection
+    id:             3
+    producerId:     1
+    consumerId:     4
+    description:    Provides Milk
+
+- !!models.Connection
+    id:             4
+    producerId:     3
+    consumerId:     1
+    description:    Provides Grass Seeds
+
+- !!models.Connection
+    id:             5
+    producerId:     8
+    consumerId:     1
+    description:    Provides Calves
+    
+- !!models.Connection
+    id:             6
+    producerId:     9
+    consumerId:     2
+    description:    Provides Rennet
+
+- !!models.Connection
+    id:             7
+    producerId:     1
+    consumerId:     9
+    description:    Provides Cattle
+
+- !!models.Connection
+    id:             8
+    producerId:     2
+    consumerId:     10
+    description:    Provides Cattle
+
+- !!models.Connection
+    id:             9
+    producerId:     10
+    consumerId:     11
+    description:    Buys Weekly Groceries
+
+- !!models.Connection
+    id:             10
+    producerId:     10
+    consumerId:     12
+    description:    Buys Weekly Groceries
+
+- !!models.Connection
+    id:             11
+    producerId:     10
+    consumerId:     13
+    description:    Buys Weekly Groceries
+
+- !!models.Connection
+    id:             12
+    producerId:     10
+    consumerId:     14
+    description:    Buys Weekly Groceries
+
+- !!models.Connection
+    id:             13
+    producerId:     10
+    consumerId:     15
+    description:    Buys Weekly Groceries
+
+- !!models.Connection
+    id:             14
+    producerId:     4
+    consumerId:     14
+    description:    Buys Fruit and veg
+
+- !!models.Connection
+    id:             15
+    producerId:     4
+    consumerId:     15
+    description:    Buys Fruit and veg
+
+- !!models.Connection
+    id:             16
+    producerId:     4
+    consumerId:     16
+    description:    Buys Fruit and veg
+
+- !!models.Connection
+    id:             17
+    producerId:     4
+    consumerId:     17
+    description:    Buys Fruit and veg
+
+- !!models.Connection
+    id:             18
+    producerId:     4
+    consumerId:     18
+    description:    Buys Fruit and veg
+
+- !!models.Connection
+    id:             101
+    producerId:     101
+    consumerId:     102
+    description:    Provides apples
+
+- !!models.Connection
+    id:             102
+    producerId:     103
+    consumerId:     102
+    description:    Provides Pure Spring water
+
+- !!models.Connection
+    id:             103
+    producerId:     107
+    consumerId:     114
+    description:    Provides Organic Feed
+
+- !!models.Connection
+    id:             104
+    producerId:     119
+    consumerId:     105
+    description:    Provides Grapes Wholesale
+
+- !!models.Connection
+    id:             105
+    producerId:     112
+    consumerId:     115
+    description:    Weekly Shopper
+
+- !!models.Connection
+    id:             106
+    producerId:     112
+    consumerId:     121
+    description:    weekly shopper
+
+- !!models.Connection
+    id:             107
+    producerId:     113
+    consumerId:     117
+    description:    Buys Flowers on special days
+
+- !!models.Connection
+    id:             108
+    producerId:     104
+    consumerId:     106
+    description:    Provides Organic material
+
+- !!models.Connection
+    id:             109
+    producerId:     106
+    consumerId:     101
+    description:    Sells compost
+
+- !!models.Connection
+    id:             110
+    producerId:     114
+    consumerId:     111
+    description:    Sells goat products
+
+- !!models.Connection
+    id:             111
+    producerId:     111
+    consumerId:     112
+    description:    Contractor, delivers to Foodland daily
+
+- !!models.Connection
+    id:             112
+    producerId:     113
+    consumerId:     116
+    description:    Buys pots
+
+- !!models.Connection
+    id:             113
+    producerId:     110
+    consumerId:     118
+    description:    Buys Honey
+
+- !!models.Connection
+    id:             114
+    producerId:     109
+    consumerId:     114
+    description:    Sells Equipment
+
+- !!models.Connection
+    id:             115
+    producerId:     113
+    consumerId:     106
+    description:    Gives organic material
+
+- !!models.Connection
+    id:             200
+    producerId:     200
+    consumerId:     202
+    description:    Provides Rare Earth Metals
+
+- !!models.Connection
+    id:             201
+    producerId:     200
+    consumerId:     203
+    description:    Provides Rare Earth Metals
+
+- !!models.Connection
+    id:             202
+    producerId:     201
+    consumerId:     202
+    description:    Provides Common Metals
+
+- !!models.Connection
+    id:             203
+    producerId:     201
+    consumerId:     203
+    description:    Provides Common Metals
+
+- !!models.Connection
+    id:             204
+    producerId:     204
+    consumerId:     203
+    description:    Provides Plastic
+
+- !!models.Connection
+    id:             205
+    producerId:     205
+    consumerId:     202
+    description:    Provides Plastic
+
+- !!models.Connection
+    id:             206
+    producerId:     206
+    consumerId:     204
+    description:    Provides Petrochemical
+
+- !!models.Connection
+    id:             207
+    producerId:     202
+    consumerId:     207
+    description:    Provides Computer Components
+
+- !!models.Connection
+    id:             208
+    producerId:     202
+    consumerId:     208
+    description:    Provides Computer Components 
+
+- !!models.Connection
+    id:             209
+    producerId:     208
+    consumerId:     209
+    description:    Stores PCs
+
+- !!models.Connection
+    id:             210
+    producerId:     208
+    consumerId:     210
+    description:    Provides PCs
+
+- !!models.Connection
+    id:             211
+    producerId:     210
+    consumerId:     205
+    description:    Provides Old PCs
+
+- !!models.Connection
+    id:             212
+    producerId:     10
+    consumerId:     15
+    description:    Buys Weekly Groceries
+
+- !!models.Connection
+    id:             213
+    producerId:     207
+    consumerId:     211
+    description:    Buys PCs
+
+- !!models.Connection
+    id:             214
+    producerId:     207
+    consumerId:     212
+    description:    Buys PCs
+
+- !!models.Connection
+    id:             215
+    producerId:     207
+    consumerId:     213
+    description:    Buys PCs
+
+- !!models.Connection
+    id:             216
+    producerId:     207
+    consumerId:     214
+    description:    Buys PCs
+
+- !!models.Connection
+    id:             217
+    producerId:     210
+    consumerId:     214
+    description:    Buys PCs
+
+- !!models.Connection
+    id:             218
+    producerId:     210
+    consumerId:     215
+    description:    Buys PCs
+
+- !!models.Connection
+    id:             219
+    producerId:     210
+    consumerId:     216
+    description:    Buys PCs
+
+- !!models.Connection
+    id:             220
+    producerId:     210
+    consumerId:     217
+    description:    Buys PCs
+
+- !!models.Connection
+    id:             301
+    producerId:     302
+    consumerId:     301
+    description:    Sells fresh roasted coffee
+
+- !!models.Connection
+    id:             302
+    producerId:     303
+    consumerId:     301
+    description:    Provides Orange Juice
+
+- !!models.Connection
+    id:             303
+    producerId:     304
+    consumerId:     301
+    description:    Sells and delivers Baked Goods
+
+- !!models.Connection
+    id:             304
+    producerId:     305
+    consumerId:     304
+    description:    Sells flour
+
+- !!models.Connection
+    id:             305
+    producerId:     301
+    consumerId:     306
+    description:    Local coffee addict
+
+- !!models.Connection
+    id:             306
+    producerId:     319
+    consumerId:     321
+    description:    Contracts for distribution
+
+- !!models.Connection
+    id:             307
+    producerId:     321
+    consumerId:     301
+    description:    Distributes to the Good Strawberry 
+
+- !!models.Connection
+    id:             308
+    producerId:     316
+    consumerId:     315
+    description:    Sells to Zelda 
+
+- !!models.Connection
+    id:             309
+    producerId:     320
+    consumerId:     321
+    description:    Contracts for distribution
+
+- !!models.Connection
+    id:             310
+    producerId:     312
+    consumerId:     317
+    description:    Local Market Shopper
+
+- !!models.Connection
+    id:             311
+    producerId:     315
+    consumerId:     312
+    description:    Sells at Market
+
+- !!models.Connection
+    id:             312
+    producerId:     314
+    consumerId:     313
+    description:    Performs regular checks to maintain certification
+
+- !!models.Connection
+    id:             313
+    producerId:     307
+    consumerId:     301
+    description:    Provides drinking water
+
+- !!models.Connection
+    id:             314
+    producerId:     301
+    consumerId:     318
+    description:    Coffee Maniac
+
+- !!models.Connection
+    id:             315
+    producerId:     310
+    consumerId:     311
+    description:    Contracts for Distribution
+
+- !!models.Connection
+    id:             316
+    producerId:     304
+    consumerId:     309
+    description:    Weekly shopper
+
