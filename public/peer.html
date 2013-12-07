@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Peopoly</title>
+        <script type="text/javascript" src="http://mbostock.github.com/d3/d3.js?2.6.0"></script>
+    </head>
+    <body>
+        <script type="text/javascript" charset="utf-8">
+            var peerId = getParameterByName("peer");
+            console.log("Chain for peer " + peerId);
+            
+            
+            d3.json("/peer/" + peerId, function(data, error) {
+                alert(JSON.stringify(data));
+            });
+            
+            function getParameterByName(name) {
+                name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
+                var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+                results = regex.exec(location.search);
+                return results == null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+            }
+
+        </script>
+    </body>
+</html>

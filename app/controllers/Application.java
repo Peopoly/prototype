@@ -1,10 +1,18 @@
 package controllers;
 
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+import java.util.Stack;
+
 import models.Connection;
 import models.Peer;
 import play.libs.Json;
 import play.mvc.Controller;
 import play.mvc.Result;
+
+import com.fasterxml.jackson.databind.node.ObjectNode;
 
 public class Application extends Controller {
 
@@ -38,5 +46,38 @@ public class Application extends Controller {
 
     public static Result getConnections() {
         return ok(Json.toJson(Connection.find.all()));
+    }
+
+    public static Result findAllRelatedPeersAndConnections(Long id) {
+        Peer peer = Peer.find.byId(id);
+        Set<Peer> peers = new HashSet<>();
+        peers.add(peer);
+        Set<Connection> connections = new HashSet<>();
+        Stack<Connection> working = new Stack<Connection>();
+        working.addAll(Connection.getRelations(id));
+        while (!working.isEmpty()) {
+            Connection connection = working.pop();
+            if (!connections.contains(connection)) {
+                connections.add(connection);
+                Peer producer = Peer.find.byId(connection.producerId);
+                Peer consumer = Peer.find.byId(connection.consumerId);
+                peers.add(producer);
+                peers.add(consumer);
+                List<Connection> tmp = new ArrayList<>();
+                tmp.addAll(Connection.getRelations(producer.id));
+                tmp.addAll(Connection.getRelations(consumer.id));
+                for (Connection c : tmp) {
+                    if (!connections.contains(c)) {
+                        working.push(c);
+                    }
+                }
+            }
+        }
+
+        ObjectNode result = Json.newObject();
+        result.set("peers", Json.toJson(peers));
+        result.set("connections", Json.toJson(connections));
+
+        return ok(Json.toJson(result));
     }
 }

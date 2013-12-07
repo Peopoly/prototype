@@ -9,6 +9,7 @@ GET     /peer/search/:name          controllers.Application.findPeerByName(name:
 GET     /connections                controllers.Application.getConnections()
 GET     /connection/:id             controllers.Application.getConnection(id: Long)
 GET     /connections/for/:id        controllers.Application.findConnectionsForPeer(id: Long)
+GET     /chain/:id                  controllers.Application.findAllRelatedPeersAndConnections(id: Long)
 
 # Map static resources from the /public folder to the /assets URL path
 #GET     /assets/*file               controllers.Assets.at(path="/public", file)
