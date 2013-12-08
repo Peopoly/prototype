@@ -1,116 +1,71 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
 <html lang="en">
     <head>
+    
         <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>Peopoly</title>
-        <script type="text/javascript" src="http://mbostock.github.com/d3/d3.js?2.6.0"></script>
-        <style>
-            .node {
-              stroke: #fff;
-              stroke-width: 1.5px;
-            }
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic' rel='stylesheet' type='text/css'>
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="stylesheets/normalize.min.css">
+        <link rel="stylesheet" href="stylesheets/main.css">
+        <link rel="stylesheet" href="stylesheets/style.css">
+        <link rel="stylesheet" href="stylesheets/d3-visualisation.css">
 
-            .link {
-              stroke: #999;
-              stroke-opacity: .6;
-            }
-            .node-label {
-              font-family: Arial;
-              font-size: 12;
-            }
-        </style>
+        <script src="javascripts/vendor/modernizr-2.6.2.min.js"></script>
+        <script type="text/javascript" src="http://mbostock.github.com/d3/d3.js?2.6.0"></script>
+    
+
     </head>
     <body>
-        <script type="text/javascript" charset="utf-8">
-            var width = window.innerWidth;
-            var height = window.innerHeight;
-            
-            var force = d3.layout
-                          .force()
-                          .charge(-1 * (height / 3))
-                          .linkDistance(height / 10)
-                          .size([width, height]);
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+        <div id="container">
+            <header>
+                <img src="images/logo.png" alt="Peopoly">
+                <span>Peopoly</span>
+                <nav>
+                    <ul class="paginator">
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                    </ul>
+                </nav>
+                <!--SEARCH <div id="search">
+                    <form>
+                        <span><input type="search" name="search" class="search" placeholder="Search a producer, distributor, or retailer"></span>
+                    </form>
+                </div>-->
+            </header>
 
-            var svg = d3.select("body")
-                        .append("svg")
-                        .attr("width", width)
-                        .attr("height", height);
-                        
-            var peerIndexLookup = [];
-            var peerId = getParameterByName("peer");
-            console.log("Chain for peer " + peerId);
+            <div class="circle-profile">
+            </div>
+        </div>
+<!--             <footer>
+                &copy; Peopoly 2013
+            </footer> -->
             
-            
-            d3.json("/chain/" + peerId, function(data, error) {
-                
-                data.peers.forEach(function(element, index) {
-                    peerIndexLookup[element.id] = index;
-                });
-                
-                var links = [];
-                data.connections.forEach(function(c) {
-                    links.push({
-                        source: peerIndexLookup[c.producerId],
-                        target: peerIndexLookup[c.consumerId],
-                        weight: 1,
-                    });
-                });
-                
-                force.nodes(data.peers)
-                     .links(links)
-                     .start();
-                     
-                var gnodes = svg.selectAll('g.gnode')
-                                .data(data.peers)
-                                .enter()
-                                .append('g')
-                                .classed('gnode', true)
-                                .on("click", function(d) {
-                                    console.log("gnode: " + JSON.stringify(d));
-                                    window.location = "/peer.html?peer=" + d.id;
-                                 });
-    
-                var node = gnodes.append("circle")
-                                 .attr("class", "node")
-                                 .attr("r", 7)
-                                 .call(force.drag);
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="javascriptss/vendor/jquery-1.10.1.min.js"><\/script>')</script>
 
-                var labels = gnodes.append("text")
-                                   .attr("class", "node-label")
-                                   .text(function(d) { return d.name; });
-                                   
-                var link = svg.selectAll(".link")
-                              .data(links)
-                              .enter()
-                              .append("line")
-                              .attr("class", "link")
-                              .style("stroke-width", function(d) { return 2; });
-                                   
-                node.append("title")
-                    .text(function(d) { return d.name; });
-                     
-                force.on("tick", function() {
-                        
-                    if (link) {
-                        link.attr("x1", function(d) { return d.source.x; })
-                            .attr("y1", function(d) { return d.source.y; })
-                            .attr("x2", function(d) { return d.target.x; })
-                            .attr("y2", function(d) { return d.target.y; });
-                    }
-                    
-                    gnodes.attr("transform", function(d) { 
-                        return 'translate(' + [d.x, d.y] + ')'; 
-                    });
-                });               
-            });
-            
-            function getParameterByName(name) {
-                name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
-                var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
-                results = regex.exec(location.search);
-                return results == null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
-            }
+        <script src="javascripts/plugins.js"></script>
+        <script src="javascripts/main.js"></script>
 
+        <script>
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src='//www.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
         </script>
+    
+    
+        <script src="javascripts/details.js" type="text/javascript" charset="utf-8"></script>
     </body>
 </html>

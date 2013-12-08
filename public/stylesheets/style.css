@@ -1,0 +1,134 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-image: url("../images/galaxy.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* LOGO, NAVIGATION BUTTONS, SEARCH BAR */
+
+/*
+#container {
+  width: 1100px;
+  margin: 0 auto;
+}
+*/
+
+#container {
+ width: 1100px;
+ margin: 0 auto -35px;
+ min-height: 100%;
+}
+
+header {
+  margin: 50px 0 0 0;
+}
+
+header > span {
+  text-transform: uppercase;
+  font-size: 24px;
+  color: #fff;
+  text-shadow: 1px 0 1px #262626;
+  letter-spacing: 2px;
+}
+
+.paginator {
+  position: relative; 
+}
+.paginator li {
+  display: inline;
+}
+
+.paginator a {
+  display: inline-block;
+  width: 20px; height: 20px;
+  background: url("../images/navibutton.png") no-repeat 0 0;
+  overflow: hidden;
+  list-style: none;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+.paginator a:hover, a:active {
+  background: url("../images/navibutton_active.png");
+}
+
+form {
+  width: 290px;
+  margin: 0 auto;
+}
+
+.search {
+  padding: 6px 15px 6px 30px;
+  margin: 3px;
+  background: url("../images/search_glass.png") no-repeat 8px 6px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+}
+
+input[type=text] {
+  color: #585858;
+}
+
+/* CIRCLE PROFILE */
+.circle-profile {
+  border-radius: 50%;
+  width: 580px; height: 580px;
+  background-color: rgba(255, 255, 255, .75);
+  border: 10px solid #aade84;
+  margin: 0 auto;
+  color: #3d3d3d;
+  text-align: center;
+  padding: 20px;
+}
+
+.user-icon {
+  border-radius: 50%;
+  width: 70px; height: 70px;
+  border: 1px solid #3e97a8;
+  background-color: #fff;
+  margin: 10px;
+}
+
+.user-name {
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-top: 10px;
+}
+
+.site a {
+  font-size: 12px;
+  color: #00978b;
+}
+
+.site a:hover {
+  border-bottom: 1px dashed #00978b;
+}
+
+.about-user {
+  font-size: 14px;
+  margin: 20px;
+}
+
+/* FOOTER */
+footer {
+  background-color: #2b2b2b;
+  height: 35px;
+  margin-top: 20px;
+  padding: 10px;
+  padding-left: 135px;
+  font-size: 12px;
+  position: relative;
+  clear: both;
+}

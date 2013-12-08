@@ -1,27 +1,69 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
-<html lang="en">
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>Peopoly</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic' rel='stylesheet' type='text/css'>
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="stylesheets/normalize.min.css">
+        <link rel="stylesheet" href="stylesheets/main.css">
+        <link rel="stylesheet" href="stylesheets/style.css">
+        <link rel="stylesheet" href="stylesheets/d3-visualisation.css">
+
+        <script src="javascripts/vendor/modernizr-2.6.2.min.js"></script>
         <script type="text/javascript" src="http://mbostock.github.com/d3/d3.js?2.6.0"></script>
     </head>
     <body>
-        <script type="text/javascript" charset="utf-8">
-            var peerId = getParameterByName("peer");
-            console.log("Chain for peer " + peerId);
-            
-            
-            d3.json("/peer/" + peerId, function(data, error) {
-                alert(JSON.stringify(data));
-            });
-            
-            function getParameterByName(name) {
-                name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
-                var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
-                results = regex.exec(location.search);
-                return results == null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
-            }
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+        <div id="container">
+            <header>
+                <img src="images/logo.png" alt="Peopoly">
+                <span>Peopoly</span>
+                <nav>
+                    <ul class="paginator">
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                    </ul>
+                </nav>
+                <!--SEARCH <div id="search">
+                    <form>
+                        <span><input type="search" name="search" class="search" placeholder="Search a producer, distributor, or retailer"></span>
+                    </form>
+                </div>-->
+            </header>
 
+            <div class="circle-profile">
+                <img src="images/new_user.png" class="user-icon">
+                <div class="user-name">...</div>
+                <div class="site"><a href="#">...</a></div>
+                <div class="about-user">...</div>
+            </div>
+        </div>
+<!--             <footer>
+                &copy; Peopoly 2013
+            </footer> -->
+            
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+
+        <script src="javascripts/plugins.js"></script>
+        <script src="javascripts/main.js"></script>
+
+        <script src="javascripts/peer.js" type="text/javascript" charset="utf-8"></script>
+        <script>
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src='//www.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
         </script>
     </body>
 </html>
